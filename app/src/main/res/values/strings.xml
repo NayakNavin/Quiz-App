@@ -1,0 +1,73 @@
+<resources>
+    <string name="app_name">Quiz App</string>
+    <string name="title_q_1">Question 1</string>
+    <string name="content_q_1">Which company found Android ?</string>
+    <string name="option_q_1_1">Google</string>
+    <string name="option_q_1_2">Android Inc.</string>
+    <string name="option_q_1_3">Htc</string>
+
+    <string name="title_q_2">Question 2</string>
+    <string name="content_q_2">Which is the latest Android Version ? </string>
+    <string name="option_q_2_1">Oreo</string>
+    <string name="option_q_2_2">Marshmellow</string>
+    <string name="option_q_2_3">Nougat</string>
+
+    <string name="title_q_3">Question 3</string>
+    <string name="content_q_3">What is the purpose of the attribute android:id="" ?</string>
+    <string name="option_q_3_1">To assign an id to values in java</string>
+    <string name="option_q_3_2">To call a method</string>
+    <string name="option_q_3_3">To assign an id to views in xml</string>
+
+    <string name="title_q_4">Question 4</string>
+    <string name="content_q_4">Which of the following are Java keywords?</string>
+    <string name="option_q_4_1">true</string>
+    <string name="option_q_4_2">long</string>
+    <string name="option_q_4_3">static</string>
+    <string name="option_q_4_4">end</string>
+
+    <string name="title_q_5">Question 5</string>
+    <string name="content_q_5">What is the main programming language for Android Development?</string>
+
+    <string name="title_q_6">Question 6</string>
+    <string name="content_q_6">Which is not a Relative Layout attributes ?</string>
+    <string name="option_q_6_1">android:layout_toEndOf</string>
+    <string name="option_q_6_2">android:layout_alignTop</string>
+    <string name="option_q_6_3">android:layout_alignEnd</string>
+    <string name="option_q_6_4">android:layout_weight</string>
+
+    <string name="title_q_7">Question 7</string>
+    <string name="content_q_7">What is full form of ADB ?</string>
+    <string name="option_q_7_1">Atomic Destruction Bomb</string>
+    <string name="option_q_7_2">Asian Development Bank</string>
+    <string name="option_q_7_3">Android Debug Bridge </string>
+    <string name="option_q_7_4">Active Dimethicone Bromide</string>
+
+    <string name="title_q_8">Question 8</string>
+    <string name="content_q_8">Android Studio supported platforms ?</string>
+    <string name="option_q_8_1">Windows</string>
+    <string name="option_q_8_2">MacOS</string>
+    <string name="option_q_8_3">Linux</string>
+    <string name="option_q_8_4">All of the above</string>
+
+    <string name="title_q_9">Question 9</string>
+    <string name="content_q_9">What does API stand for ?</string>
+    <string name="option_q_9_1">American Petroleum Institute</string>
+    <string name="option_q_9_2">Application Programming Interface</string>
+    <string name="option_q_9_3">Automatic Payment Interface</string>
+    <string name="option_q_9_4">Arctic Pacific Intersection</string>
+
+    <string name="title_q_10">Question 10</string>
+    <string name="content_q_10">What is Intent in Android ?</string>
+    <string name="option_q_10_1">Is messaging object you can use to request an action from another app component </string>
+    <string name="option_q_10_2">Intention or purpose</string>
+    <string name="option_q_10_3">It is a movie </string>
+    <string name="option_q_10_4">None of the above </string>
+
+    <string name="your_score_is">Your Score is</string>
+    <string name="make_sure_answer_questions">Please make sure you answer all the questions</string>
+    <string name="submit">Submit</string>
+    <string name="reset">Reset</string>
+
+    <string name="limit_1">(Note: Only 1 option allowed)</string>
+    <string name="limit_2">(Note: Only 2 options allowed)</string>
+</resources>
