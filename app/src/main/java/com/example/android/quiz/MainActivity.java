@@ -32,56 +32,56 @@ public class MainActivity extends AppCompatActivity {
     boolean checked1, checked2, checked3, checked4, checked6, checked7, checked8, checked9, checked10;
     String answer5;
 
-    @BindView(R.id.button41)
-    CheckBox mCheckBox41;
+    @BindView(R.id.button_4_1)
+    CheckBox mCheckBox_4_1;
 
-    @BindView(R.id.button42)
-    CheckBox mCheckBox42;
+    @BindView(R.id.button_4_2)
+    CheckBox mCheckBox_4_2;
 
-    @BindView(R.id.button43)
-    CheckBox mCheckBox43;
+    @BindView(R.id.button_4_3)
+    CheckBox mCheckBox_4_3;
 
-    @BindView(R.id.button44)
-    CheckBox mCheckBox44;
-
-
-    @BindView(R.id.button61)
-    CheckBox mCheckBox61;
-
-    @BindView(R.id.button62)
-    CheckBox mCheckBox62;
-
-    @BindView(R.id.button63)
-    CheckBox mCheckBox63;
-
-    @BindView(R.id.button64)
-    CheckBox mCheckBox64;
+    @BindView(R.id.button_4_4)
+    CheckBox mCheckBox_4_4;
 
 
-    @BindView(R.id.button71)
-    CheckBox mCheckBox71;
+    @BindView(R.id.button_6_1)
+    CheckBox mCheckBox_6_1;
 
-    @BindView(R.id.button72)
-    CheckBox mCheckBox72;
+    @BindView(R.id.button_6_2)
+    CheckBox mCheckBox_6_2;
 
-    @BindView(R.id.button73)
-    CheckBox mCheckBox73;
+    @BindView(R.id.button_6_3)
+    CheckBox mCheckBox_6_3;
 
-    @BindView(R.id.button74)
-    CheckBox mCheckBox74;
+    @BindView(R.id.button_6_4)
+    CheckBox mCheckBox_6_4;
 
 
-    @BindView(R.id.button101)
-    CheckBox mCheckBox101;
+    @BindView(R.id.button_7_1)
+    CheckBox mCheckBox_7_1;
 
-    @BindView(R.id.button102)
-    CheckBox mCheckBox102;
+    @BindView(R.id.button_7_2)
+    CheckBox mCheckBox_7_2;
 
-    @BindView(R.id.button103)
-    CheckBox mCheckBox103;
+    @BindView(R.id.button_7_3)
+    CheckBox mCheckBox_7_3;
 
-    @BindView(R.id.button104)
-    CheckBox mCheckBox104;
+    @BindView(R.id.button_7_4)
+    CheckBox mCheckBox_7_4;
+
+
+    @BindView(R.id.button_10_1)
+    CheckBox mCheckBox_10_1;
+
+    @BindView(R.id.button_10_2)
+    CheckBox mCheckBox_10_2;
+
+    @BindView(R.id.button_10_3)
+    CheckBox mCheckBox_10_3;
+
+    @BindView(R.id.button_10_4)
+    CheckBox mCheckBox_10_4;
 
 
     @BindView(R.id.edit_text_q5)
@@ -104,16 +104,16 @@ public class MainActivity extends AppCompatActivity {
 
 
     @BindView(R.id.note_q_4)
-    TextView noteTextView4;
+    TextView noteTextViewQ4;
 
     @BindView(R.id.note_q_6)
-    TextView noteTextView6;
+    TextView noteTextViewQ6;
 
     @BindView(R.id.note_q_7)
-    TextView noteTextView7;
+    TextView noteTextViewQ7;
 
     @BindView(R.id.note_q_10)
-    TextView noteTextView10;
+    TextView noteTextViewQ10;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -121,10 +121,10 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         ButterKnife.bind(this);
 
-        noteTextView4.setVisibility(View.INVISIBLE);
-        noteTextView6.setVisibility(View.INVISIBLE);
-        noteTextView7.setVisibility(View.INVISIBLE);
-        noteTextView10.setVisibility(View.INVISIBLE);
+        noteTextViewQ4.setVisibility(View.INVISIBLE);
+        noteTextViewQ6.setVisibility(View.INVISIBLE);
+        noteTextViewQ7.setVisibility(View.INVISIBLE);
+        noteTextViewQ10.setVisibility(View.INVISIBLE);
     }
 
     public void onCheckedQuestion1(View view) {
@@ -132,17 +132,17 @@ public class MainActivity extends AppCompatActivity {
 
         //  question 1
         switch (view.getId()) {
-            case R.id.button11:
+            case R.id.button_1_1:
                 if (checked1) {
                     score1 = 0;
                     break;
                 }
-            case R.id.button12:
+            case R.id.button_1_2:
                 if (checked1) {
                     score1 = 10;
                     break;
                 }
-            case R.id.button13:
+            case R.id.button_1_3:
                 if (checked1) {
                     score1 = 0;
                     break;
@@ -155,17 +155,17 @@ public class MainActivity extends AppCompatActivity {
 
         //  question 2
         switch (view.getId()) {
-            case R.id.button21:
+            case R.id.button_2_1:
                 if (checked2) {
                     score2 = 10;
                     break;
                 }
-            case R.id.button22:
+            case R.id.button_2_2:
                 if (checked2) {
                     score2 = 0;
                     break;
                 }
-            case R.id.button23:
+            case R.id.button_2_3:
                 if (checked2) {
                     score2 = 0;
                     break;
@@ -178,17 +178,17 @@ public class MainActivity extends AppCompatActivity {
 
         //  question 3
         switch (view.getId()) {
-            case R.id.button31:
+            case R.id.button_3_1:
                 if (checked3) {
                     score3 = 0;
                     break;
                 }
-            case R.id.button32:
+            case R.id.button_3_2:
                 if (checked3) {
                     score3 = 0;
                     break;
                 }
-            case R.id.button33:
+            case R.id.button_3_3:
                 if (checked3) {
                     score3 = 10;
                     break;
@@ -197,7 +197,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void onCheckedQuestion4(View view) {
-        checked4 = mCheckBox41.isChecked() || mCheckBox42.isChecked() || mCheckBox43.isChecked() || mCheckBox44.isChecked();
+        checked4 = mCheckBox_4_1.isChecked() || mCheckBox_4_2.isChecked() || mCheckBox_4_3.isChecked() || mCheckBox_4_4.isChecked();
 
         // Allowing user to select 2 checkbox and informs the user
         int maxChecked = 2;
@@ -210,7 +210,7 @@ public class MainActivity extends AppCompatActivity {
         }
 
         if (noChecked >= maxChecked) {
-            noteTextView4.setVisibility(View.VISIBLE);
+            noteTextViewQ4.setVisibility(View.VISIBLE);
             for (int i = 0; i < 4; i++) {
                 CheckBox item = (CheckBox) layout.getChildAt(i);
                 if (!item.isChecked()) {
@@ -218,7 +218,7 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
         } else {
-            noteTextView4.setVisibility(View.INVISIBLE);
+            noteTextViewQ4.setVisibility(View.INVISIBLE);
             for (int i = 0; i < 4; i++) {
                 CheckBox item = (CheckBox) layout.getChildAt(i);
                 item.setEnabled(true);
@@ -227,7 +227,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void onCheckedQuestion6(View view) {
-        checked6 = mCheckBox61.isChecked() || mCheckBox62.isChecked() || mCheckBox63.isChecked() || mCheckBox64.isChecked();
+        checked6 = mCheckBox_6_1.isChecked() || mCheckBox_6_2.isChecked() || mCheckBox_6_3.isChecked() || mCheckBox_6_4.isChecked();
 
         // Allowing user to select 1 checkbox and informs the user
         int maxChecked = 1;
@@ -240,7 +240,7 @@ public class MainActivity extends AppCompatActivity {
         }
 
         if (noChecked >= maxChecked) {
-            noteTextView6.setVisibility(View.VISIBLE);
+            noteTextViewQ6.setVisibility(View.VISIBLE);
             for (int i = 0; i < 4; i++) {
                 CheckBox item = (CheckBox) layout.getChildAt(i);
                 if (!item.isChecked()) {
@@ -248,7 +248,7 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
         } else {
-            noteTextView6.setVisibility(View.INVISIBLE);
+            noteTextViewQ6.setVisibility(View.INVISIBLE);
             for (int i = 0; i < 4; i++) {
                 CheckBox item = (CheckBox) layout.getChildAt(i);
                 item.setEnabled(true);
@@ -257,7 +257,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void onCheckedQuestion7(View view) {
-        checked7 = mCheckBox71.isChecked() || mCheckBox72.isChecked() || mCheckBox73.isChecked() || mCheckBox74.isChecked();
+        checked7 = mCheckBox_7_1.isChecked() || mCheckBox_7_2.isChecked() || mCheckBox_7_3.isChecked() || mCheckBox_7_4.isChecked();
 
         // Allowing user to select 1 checkbox and informs the user
         int maxChecked = 1;
@@ -270,7 +270,7 @@ public class MainActivity extends AppCompatActivity {
         }
 
         if (noChecked >= maxChecked) {
-            noteTextView7.setVisibility(View.VISIBLE);
+            noteTextViewQ7.setVisibility(View.VISIBLE);
             for (int i = 0; i < 4; i++) {
                 CheckBox item = (CheckBox) layout.getChildAt(i);
                 if (!item.isChecked()) {
@@ -278,7 +278,7 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
         } else {
-            noteTextView7.setVisibility(View.INVISIBLE);
+            noteTextViewQ7.setVisibility(View.INVISIBLE);
             for (int i = 0; i < 4; i++) {
                 CheckBox item = (CheckBox) layout.getChildAt(i);
                 item.setEnabled(true);
@@ -291,22 +291,22 @@ public class MainActivity extends AppCompatActivity {
 
         //  question 8
         switch (view.getId()) {
-            case R.id.button81:
+            case R.id.button_8_1:
                 if (checked8) {
                     score8 = 0;
                     break;
                 }
-            case R.id.button12:
+            case R.id.button_8_2:
                 if (checked1) {
                     score8 = 0;
                     break;
                 }
-            case R.id.button83:
+            case R.id.button_8_3:
                 if (checked8) {
                     score8 = 0;
                     break;
                 }
-            case R.id.button84:
+            case R.id.button_8_4:
                 if (checked8) {
                     score8 = 10;
                     break;
@@ -319,22 +319,22 @@ public class MainActivity extends AppCompatActivity {
 
         //  question 9
         switch (view.getId()) {
-            case R.id.button91:
+            case R.id.button_9_1:
                 if (checked9) {
                     score9 = 0;
                     break;
                 }
-            case R.id.button92:
+            case R.id.button_9_2:
                 if (checked9) {
                     score9 = 10;
                     break;
                 }
-            case R.id.button93:
+            case R.id.button_9_3:
                 if (checked9) {
                     score9 = 0;
                     break;
                 }
-            case R.id.button94:
+            case R.id.button_9_4:
                 if (checked9) {
                     score9 = 0;
                     break;
@@ -343,7 +343,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void onCheckedQuestion10(View view) {
-        checked10 = mCheckBox101.isChecked() || mCheckBox102.isChecked() || mCheckBox103.isChecked() || mCheckBox104.isChecked();
+        checked10 = mCheckBox_10_1.isChecked() || mCheckBox_10_2.isChecked() || mCheckBox_10_3.isChecked() || mCheckBox_10_4.isChecked();
 
         // Allowing user to select 1 checkbox and informs the user
         int maxChecked = 1;
@@ -356,7 +356,7 @@ public class MainActivity extends AppCompatActivity {
         }
 
         if (noChecked >= maxChecked) {
-            noteTextView10.setVisibility(View.VISIBLE);
+            noteTextViewQ10.setVisibility(View.VISIBLE);
             for (int i = 0; i < 4; i++) {
                 CheckBox item = (CheckBox) layout.getChildAt(i);
                 if (!item.isChecked()) {
@@ -364,7 +364,7 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
         } else {
-            noteTextView10.setVisibility(View.INVISIBLE);
+            noteTextViewQ10.setVisibility(View.INVISIBLE);
             for (int i = 0; i < 4; i++) {
                 CheckBox item = (CheckBox) layout.getChildAt(i);
                 item.setEnabled(true);
@@ -380,9 +380,9 @@ public class MainActivity extends AppCompatActivity {
 
             // question 4
             score4 = 0;
-            if (mCheckBox42.isChecked() && mCheckBox43.isChecked()) {
+            if (mCheckBox_4_2.isChecked() && mCheckBox_4_3.isChecked()) {
                 score4 = 10;
-            } else if (mCheckBox42.isChecked() || mCheckBox43.isChecked()) {
+            } else if (mCheckBox_4_2.isChecked() || mCheckBox_4_3.isChecked()) {
                 score4 = 5;
             }
 
@@ -396,7 +396,7 @@ public class MainActivity extends AppCompatActivity {
 
             //  question 6
             score6 = 0;
-            if (mCheckBox64.isChecked()) {
+            if (mCheckBox_6_4.isChecked()) {
                 score6 = 10;
             } else {
                 score6 = 0;
@@ -405,7 +405,7 @@ public class MainActivity extends AppCompatActivity {
 
             //  question 7
             score7 = 0;
-            if (mCheckBox73.isChecked()) {
+            if (mCheckBox_7_3.isChecked()) {
                 score7 = 10;
             } else {
                 score7 = 0;
@@ -414,7 +414,7 @@ public class MainActivity extends AppCompatActivity {
 
             //  question 10
             score10 = 0;
-            if (mCheckBox101.isChecked()) {
+            if (mCheckBox_10_1.isChecked()) {
                 score10 = 10;
             } else {
                 score10 = 0;
@@ -451,48 +451,48 @@ public class MainActivity extends AppCompatActivity {
 
     // Unchechking checkboxes when reset button is clicked
     private void uncheckCheckBoxes() {
-        mCheckBox41.setChecked(false);
-        mCheckBox42.setChecked(false);
-        mCheckBox43.setChecked(false);
-        mCheckBox44.setChecked(false);
+        mCheckBox_4_1.setChecked(false);
+        mCheckBox_4_2.setChecked(false);
+        mCheckBox_4_3.setChecked(false);
+        mCheckBox_4_4.setChecked(false);
 
-        mCheckBox61.setChecked(false);
-        mCheckBox62.setChecked(false);
-        mCheckBox63.setChecked(false);
-        mCheckBox64.setChecked(false);
+        mCheckBox_6_1.setChecked(false);
+        mCheckBox_6_2.setChecked(false);
+        mCheckBox_6_3.setChecked(false);
+        mCheckBox_6_4.setChecked(false);
 
-        mCheckBox71.setChecked(false);
-        mCheckBox72.setChecked(false);
-        mCheckBox73.setChecked(false);
-        mCheckBox74.setChecked(false);
+        mCheckBox_7_1.setChecked(false);
+        mCheckBox_7_2.setChecked(false);
+        mCheckBox_7_3.setChecked(false);
+        mCheckBox_7_4.setChecked(false);
 
-        mCheckBox101.setChecked(false);
-        mCheckBox102.setChecked(false);
-        mCheckBox103.setChecked(false);
-        mCheckBox104.setChecked(false);
+        mCheckBox_10_1.setChecked(false);
+        mCheckBox_10_2.setChecked(false);
+        mCheckBox_10_3.setChecked(false);
+        mCheckBox_10_4.setChecked(false);
     }
 
     // Enabling disabled checkboxes when reset button is clicked
     private void enableCheckBoxes() {
-        mCheckBox41.setEnabled(true);
-        mCheckBox42.setEnabled(true);
-        mCheckBox43.setEnabled(true);
-        mCheckBox44.setEnabled(true);
+        mCheckBox_4_1.setEnabled(true);
+        mCheckBox_4_2.setEnabled(true);
+        mCheckBox_4_3.setEnabled(true);
+        mCheckBox_4_4.setEnabled(true);
 
-        mCheckBox61.setEnabled(true);
-        mCheckBox62.setEnabled(true);
-        mCheckBox63.setEnabled(true);
-        mCheckBox64.setEnabled(true);
+        mCheckBox_6_1.setEnabled(true);
+        mCheckBox_6_2.setEnabled(true);
+        mCheckBox_6_3.setEnabled(true);
+        mCheckBox_6_4.setEnabled(true);
 
-        mCheckBox71.setEnabled(true);
-        mCheckBox72.setEnabled(true);
-        mCheckBox73.setEnabled(true);
-        mCheckBox74.setEnabled(true);
+        mCheckBox_7_1.setEnabled(true);
+        mCheckBox_7_2.setEnabled(true);
+        mCheckBox_7_3.setEnabled(true);
+        mCheckBox_7_4.setEnabled(true);
 
-        mCheckBox101.setEnabled(true);
-        mCheckBox102.setEnabled(true);
-        mCheckBox103.setEnabled(true);
-        mCheckBox104.setEnabled(true);
+        mCheckBox_10_1.setEnabled(true);
+        mCheckBox_10_2.setEnabled(true);
+        mCheckBox_10_3.setEnabled(true);
+        mCheckBox_10_4.setEnabled(true);
     }
 
     // Setting scrollview to stop scrolling to edit_text_q5 when the reset button is clicked
@@ -503,9 +503,9 @@ public class MainActivity extends AppCompatActivity {
 
     // Hides Notes textview
     private void hideText() {
-        noteTextView4.setVisibility(View.INVISIBLE);
-        noteTextView6.setVisibility(View.INVISIBLE);
-        noteTextView7.setVisibility(View.INVISIBLE);
-        noteTextView10.setVisibility(View.INVISIBLE);
+        noteTextViewQ4.setVisibility(View.INVISIBLE);
+        noteTextViewQ6.setVisibility(View.INVISIBLE);
+        noteTextViewQ7.setVisibility(View.INVISIBLE);
+        noteTextViewQ10.setVisibility(View.INVISIBLE);
     }
 }
