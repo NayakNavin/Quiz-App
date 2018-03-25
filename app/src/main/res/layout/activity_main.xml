@@ -4,12 +4,13 @@
     android:id="@+id/no_Scroll"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:background="#3D4F73">
+    android:background="@color/layoutBackGround">
 
     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
+
         android:orientation="vertical"
         tools:context="com.example.android.quiz.MainActivity">
 
@@ -66,13 +67,13 @@
                     android:textColor="@color/questionTextColor" />
 
                 <RadioGroup
-                    android:id="@+id/radiogroup1"
+                    android:id="@+id/radioGroup1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:orientation="vertical">
 
                     <RadioButton
-                        android:id="@+id/button11"
+                        android:id="@+id/button_1_1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="6dp"
@@ -82,7 +83,7 @@
                         android:textSize="12sp" />
 
                     <RadioButton
-                        android:id="@+id/button12"
+                        android:id="@+id/button_1_2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="6dp"
@@ -92,7 +93,7 @@
                         android:textSize="12sp" />
 
                     <RadioButton
-                        android:id="@+id/button13"
+                        android:id="@+id/button_1_3"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginBottom="5dp"
@@ -144,13 +145,13 @@
                     android:textColor="@color/questionTextColor" />
 
                 <RadioGroup
-                    android:id="@+id/radiogroup2"
+                    android:id="@+id/radioGroup2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:orientation="vertical">
 
                     <RadioButton
-                        android:id="@+id/button21"
+                        android:id="@+id/button_2_1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="6dp"
@@ -160,7 +161,7 @@
                         android:textSize="12sp" />
 
                     <RadioButton
-                        android:id="@+id/button22"
+                        android:id="@+id/button_2_2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="6dp"
@@ -170,7 +171,7 @@
                         android:textSize="12sp" />
 
                     <RadioButton
-                        android:id="@+id/button23"
+                        android:id="@+id/button_2_3"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginBottom="5dp"
@@ -222,13 +223,13 @@
                     android:textColor="@color/questionTextColor" />
 
                 <RadioGroup
-                    android:id="@+id/radiogroup3"
+                    android:id="@+id/radioGroup3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:orientation="vertical">
 
                     <RadioButton
-                        android:id="@+id/button31"
+                        android:id="@+id/button_3_1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="6dp"
@@ -238,7 +239,7 @@
                         android:textSize="12sp" />
 
                     <RadioButton
-                        android:id="@+id/button32"
+                        android:id="@+id/button_3_2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="6dp"
@@ -248,7 +249,7 @@
                         android:textSize="12sp" />
 
                     <RadioButton
-                        android:id="@+id/button33"
+                        android:id="@+id/button_3_3"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginBottom="5dp"
@@ -301,12 +302,12 @@
 
                 <LinearLayout
                     android:id="@+id/layout_4"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:orientation="vertical">
 
                     <CheckBox
-                        android:id="@+id/button41"
+                        android:id="@+id/button_4_1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="6dp"
@@ -316,7 +317,7 @@
                         android:textSize="12sp" />
 
                     <CheckBox
-                        android:id="@+id/button42"
+                        android:id="@+id/button_4_2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="6dp"
@@ -326,7 +327,7 @@
                         android:textSize="12sp" />
 
                     <CheckBox
-                        android:id="@+id/button43"
+                        android:id="@+id/button_4_3"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="6dp"
@@ -336,7 +337,7 @@
                         android:textSize="12sp" />
 
                     <CheckBox
-                        android:id="@+id/button44"
+                        android:id="@+id/button_4_4"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="6dp"
@@ -445,12 +446,12 @@
 
                 <LinearLayout
                     android:id="@+id/layout_6"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:orientation="vertical">
 
                     <CheckBox
-                        android:id="@+id/button61"
+                        android:id="@+id/button_6_1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="6dp"
@@ -460,7 +461,7 @@
                         android:textSize="12sp" />
 
                     <CheckBox
-                        android:id="@+id/button62"
+                        android:id="@+id/button_6_2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="6dp"
@@ -470,7 +471,7 @@
                         android:textSize="12sp" />
 
                     <CheckBox
-                        android:id="@+id/button63"
+                        android:id="@+id/button_6_3"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="6dp"
@@ -480,7 +481,7 @@
                         android:textSize="12sp" />
 
                     <CheckBox
-                        android:id="@+id/button64"
+                        android:id="@+id/button_6_4"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="6dp"
@@ -497,7 +498,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="5dp"
                     android:layout_marginLeft="10dp"
-                    android:text="@string/limit_1"
+                    android:text="@string/limit_2"
                     android:textColor="@color/note"
 
                     />
@@ -542,15 +543,15 @@
                     android:text="@string/content_q_7"
                     android:textColor="@color/questionTextColor" />
 
-                <LinearLayout
-                    android:id="@+id/layout_7"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
+                <RadioGroup
+                    android:id="@+id/radioGroup7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:orientation="vertical">
 
 
-                    <CheckBox
-                        android:id="@+id/button71"
+                    <RadioButton
+                        android:id="@+id/button_7_1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="6dp"
@@ -559,8 +560,8 @@
                         android:textColor="@color/optionTextColor"
                         android:textSize="12sp" />
 
-                    <CheckBox
-                        android:id="@+id/button72"
+                    <RadioButton
+                        android:id="@+id/button_7_2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="6dp"
@@ -569,8 +570,8 @@
                         android:textColor="@color/optionTextColor"
                         android:textSize="12sp" />
 
-                    <CheckBox
-                        android:id="@+id/button73"
+                    <RadioButton
+                        android:id="@+id/button_7_3"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="6dp"
@@ -579,8 +580,8 @@
                         android:textColor="@color/optionTextColor"
                         android:textSize="12sp" />
 
-                    <CheckBox
-                        android:id="@+id/button74"
+                    <RadioButton
+                        android:id="@+id/button_7_4"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="6dp"
@@ -588,16 +589,7 @@
                         android:text="@string/option_q_7_4"
                         android:textColor="@color/optionTextColor"
                         android:textSize="12sp" />
-                </LinearLayout>
-
-                <TextView
-                    android:id="@+id/note_q_7"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="5dp"
-                    android:layout_marginLeft="10dp"
-                    android:text="@string/limit_1"
-                    android:textColor="@color/note" />
+                </RadioGroup>
 
             </LinearLayout>
         </android.support.v7.widget.CardView>
@@ -639,14 +631,14 @@
                     android:text="@string/content_q_8"
                     android:textColor="@color/questionTextColor" />
 
-                <RadioGroup
-                    android:id="@+id/radiogroup8"
+                <LinearLayout
+                    android:id="@+id/layout_8"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:orientation="vertical">
 
-                    <RadioButton
-                        android:id="@+id/button81"
+                    <CheckBox
+                        android:id="@+id/button_8_1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="6dp"
@@ -655,8 +647,8 @@
                         android:textColor="@color/optionTextColor"
                         android:textSize="12sp" />
 
-                    <RadioButton
-                        android:id="@+id/button82"
+                    <CheckBox
+                        android:id="@+id/button_8_2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="6dp"
@@ -665,8 +657,8 @@
                         android:textColor="@color/optionTextColor"
                         android:textSize="12sp" />
 
-                    <RadioButton
-                        android:id="@+id/button83"
+                    <CheckBox
+                        android:id="@+id/button_8_3"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="6dp"
@@ -675,8 +667,8 @@
                         android:textColor="@color/optionTextColor"
                         android:textSize="12sp" />
 
-                    <RadioButton
-                        android:id="@+id/button84"
+                    <CheckBox
+                        android:id="@+id/button_8_4"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginBottom="5dp"
@@ -686,7 +678,16 @@
                         android:textColor="@color/optionTextColor"
                         android:textSize="12sp" />
 
-                </RadioGroup>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/note_q_8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/limit_2"
+                    android:textColor="@color/note" />
             </LinearLayout>
         </android.support.v7.widget.CardView>
 
@@ -728,13 +729,13 @@
                     android:textColor="@color/questionTextColor" />
 
                 <RadioGroup
-                    android:id="@+id/radiogroup9"
+                    android:id="@+id/radioGroup9"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:orientation="vertical">
 
                     <RadioButton
-                        android:id="@+id/button91"
+                        android:id="@+id/button_9_1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="6dp"
@@ -744,7 +745,7 @@
                         android:textSize="12sp" />
 
                     <RadioButton
-                        android:id="@+id/button92"
+                        android:id="@+id/button_9_2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="6dp"
@@ -754,7 +755,7 @@
                         android:textSize="12sp" />
 
                     <RadioButton
-                        android:id="@+id/button93"
+                        android:id="@+id/button_9_3"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="6dp"
@@ -764,7 +765,7 @@
                         android:textSize="12sp" />
 
                     <RadioButton
-                        android:id="@+id/button94"
+                        android:id="@+id/button_9_4"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginBottom="5dp"
@@ -816,14 +817,14 @@
                     android:textColor="@color/questionTextColor" />
 
 
-                <LinearLayout
-                    android:id="@+id/layout_10"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
+                <RadioGroup
+                    android:id="@+id/radioGroup10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:orientation="vertical">
 
-                    <CheckBox
-                        android:id="@+id/button101"
+                    <RadioButton
+                        android:id="@+id/button_10_1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="6dp"
@@ -833,8 +834,8 @@
                         android:textColor="@color/optionTextColor"
                         android:textSize="12sp" />
 
-                    <CheckBox
-                        android:id="@+id/button102"
+                    <RadioButton
+                        android:id="@+id/button_10_2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="6dp"
@@ -843,8 +844,8 @@
                         android:textColor="@color/optionTextColor"
                         android:textSize="12sp" />
 
-                    <CheckBox
-                        android:id="@+id/button103"
+                    <RadioButton
+                        android:id="@+id/button_10_3"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="6dp"
@@ -853,8 +854,8 @@
                         android:textColor="@color/optionTextColor"
                         android:textSize="12sp" />
 
-                    <CheckBox
-                        android:id="@+id/button104"
+                    <RadioButton
+                        android:id="@+id/button_10_4"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="6dp"
@@ -862,20 +863,11 @@
                         android:text="@string/option_q_10_4"
                         android:textColor="@color/optionTextColor"
                         android:textSize="12sp" />
-                </LinearLayout>
+                </RadioGroup>
 
-                <TextView
-                    android:id="@+id/note_q_10"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="5dp"
-                    android:layout_marginLeft="10dp"
-                    android:text="@string/limit_1"
-                    android:textColor="@color/note" />
 
             </LinearLayout>
         </android.support.v7.widget.CardView>
-
 
         <RelativeLayout
             android:layout_width="wrap_content"

@@ -32,7 +32,7 @@
     <string name="content_q_6">Which is not a Relative Layout attributes ?</string>
     <string name="option_q_6_1">android:layout_toEndOf</string>
     <string name="option_q_6_2">android:layout_alignTop</string>
-    <string name="option_q_6_3">android:layout_alignEnd</string>
+    <string name="option_q_6_3">app:layout_constraintLeft_toLeftOf</string>
     <string name="option_q_6_4">android:layout_weight</string>
 
     <string name="title_q_7">Question 7</string>
@@ -46,7 +46,7 @@
     <string name="content_q_8">Android Studio supported platforms ?</string>
     <string name="option_q_8_1">Windows</string>
     <string name="option_q_8_2">MacOS</string>
-    <string name="option_q_8_3">Linux</string>
+    <string name="option_q_8_3">IOS</string>
     <string name="option_q_8_4">All of the above</string>
 
     <string name="title_q_9">Question 9</string>
