@@ -409,6 +409,7 @@ public class MainActivity extends AppCompatActivity {
         uncheckRadioGroup(option3);
         uncheckRadioGroup(option7);
         uncheckRadioGroup(option9);
+        uncheckRadioGroup(option10);
 
         option5.setFocusableInTouchMode(false);
         option5.setFocusable(false);
