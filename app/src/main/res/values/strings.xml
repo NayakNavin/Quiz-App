@@ -70,4 +70,6 @@
 
     <string name="limit_1">(Note: Only 1 option allowed)</string>
     <string name="limit_2">(Note: Only 2 options allowed)</string>
+    <string name="title">Welcome to Quiz!</string>
+    <string name="type_your_answer">type your answer</string>
 </resources>

@@ -1,8 +1,15 @@
 package com.example.android.quiz;
 
+import android.annotation.SuppressLint;
+import android.annotation.TargetApi;
+import android.app.Activity;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.view.MotionEvent;
 import android.view.View;
+import android.view.View.OnTouchListener;
+import android.view.ViewGroup;
+import android.view.inputmethod.InputMethodManager;
 import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.LinearLayout;
@@ -13,6 +20,8 @@ import android.widget.Toast;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
+
+@TargetApi(21)
 
 public class MainActivity extends AppCompatActivity {
     int score1, score2, score3, score4, score5, score6, score7, score8, score9, score10, totalScore;
@@ -90,16 +99,12 @@ public class MainActivity extends AppCompatActivity {
     TextView noteTextViewQ8;
 
 
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-        ButterKnife.bind(this);
-
-        noteTextViewQ4.setVisibility(View.INVISIBLE);
-        noteTextViewQ6.setVisibility(View.INVISIBLE);
-        noteTextViewQ8.setVisibility(View.INVISIBLE);
-
+    public static void hideSoftKeyboard(Activity activity) {
+        InputMethodManager inputMethodManager =
+                (InputMethodManager) activity.getSystemService(
+                        Activity.INPUT_METHOD_SERVICE);
+        assert inputMethodManager != null;
+        inputMethodManager.hideSoftInputFromWindow(activity.getCurrentFocus().getWindowToken(), 0);
     }
 
     public void onCheckedQuestion1(View view) {
@@ -202,6 +207,43 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+        setupUI(findViewById(R.id.scroll));
+        ButterKnife.bind(this);
+
+        noteTextViewQ4.setVisibility(View.INVISIBLE);
+        noteTextViewQ6.setVisibility(View.INVISIBLE);
+        noteTextViewQ8.setVisibility(View.INVISIBLE);
+
+
+    }
+
+    public void setupUI(View view) {
+
+        // Set up touch listener for non-text box views to hide keyboard.
+        if (!(view instanceof EditText)) {
+            view.setOnTouchListener(new OnTouchListener() {
+                @SuppressLint("ClickableViewAccessibility")
+                public boolean onTouch(View v, MotionEvent event) {
+                    hideSoftKeyboard(MainActivity.this);
+                    return false;
+                }
+            });
+        }
+
+        //If a layout container, iterate over children and seed recursion.
+        if (view instanceof ViewGroup) {
+            for (int i = 0; i < ((ViewGroup) view).getChildCount(); i++) {
+                View innerView = ((ViewGroup) view).getChildAt(i);
+                setupUI(innerView);
+            }
+        }
+    }
+
+
     public void onCheckedQuestion6(View view) {
         checked6 = option_6_1.isChecked() || option_6_2.isChecked() || option_6_3.isChecked() || option_6_4.isChecked();
 
@@ -218,6 +260,7 @@ public class MainActivity extends AppCompatActivity {
 
         if (noChecked >= maxChecked) {
             noteTextViewQ6.setVisibility(View.VISIBLE);
+
             for (int i = 0; i < 4; i++) {
                 CheckBox item = (CheckBox) layout.getChildAt(i);
                 if (!item.isChecked()) {
@@ -226,9 +269,11 @@ public class MainActivity extends AppCompatActivity {
             }
         } else {
             noteTextViewQ6.setVisibility(View.INVISIBLE);
+
             for (int i = 0; i < 4; i++) {
                 CheckBox item = (CheckBox) layout.getChildAt(i);
                 item.setEnabled(true);
+
             }
         }
     }
@@ -411,11 +456,12 @@ public class MainActivity extends AppCompatActivity {
         uncheckRadioGroup(option9);
         uncheckRadioGroup(option10);
 
-        option5.setFocusableInTouchMode(false);
-        option5.setFocusable(false);
+//        option5.setFocusableInTouchMode(false);
+//        option5.setFocusable(false);
         option5.setText("");
-        option5.setFocusableInTouchMode(true);
-        option5.setFocusable(true);
+        option5.clearFocus();
+//        option5.setFocusableInTouchMode(true);
+//        option5.setFocusable(true);
         uncheckCheckBoxes();
         enableCheckBoxes();
 //        noScroll();

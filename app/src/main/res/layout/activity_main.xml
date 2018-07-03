@@ -1,32 +1,34 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/no_Scroll"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scroll"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:background="@color/layoutBackGround">
+    android:background="@color/layoutBackGround"
+    tools:context="com.example.android.quiz.MainActivity"
+    tools:targetApi="11">
 
-    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:tools="http://schemas.android.com/tools"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-
-        android:orientation="vertical"
-        tools:context="com.example.android.quiz.MainActivity">
+        android:clickable="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical">
 
 
         <TextView
             android:id="@+id/textView1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginLeft="10dp"
-            android:layout_marginTop="10dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/margin_16dp"
             android:gravity="center"
-            android:text="Welcome to Quiz!"
+            android:text="@string/title"
             android:textAllCaps="true"
             android:textColor="@color/welcomeTextColor"
-            android:textSize="16sp"
+            android:textSize="@dimen/size_16sp"
             android:textStyle="bold" />
 
 
@@ -34,15 +36,16 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_marginTop="5dp"
+            android:layout_marginTop="@dimen/margin_8dp"
             app:cardBackgroundColor="@color/cardViewColor"
-            app:cardCornerRadius="10dp"
-            app:cardElevation="5dp"
+            app:cardCornerRadius="@dimen/corner_10dp"
+            app:cardElevation="@dimen/elevation_5dp"
             app:cardPreventCornerOverlap="true"
             app:cardUseCompatPadding="true">
 
 
             <LinearLayout
+                android:id="@+id/layout_1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
@@ -50,19 +53,22 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="5dp"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="@dimen/margin_8dp"
+                    android:layout_marginLeft="@dimen/margin_16dp"
+                    android:layout_marginStart="@dimen/margin_16dp"
+                    android:layout_marginTop="@dimen/margin_16dp"
                     android:text="@string/title_q_1"
                     android:textAllCaps="true"
                     android:textColor="@color/titleTextColor"
-                    android:textSize="16sp"
+                    android:textSize="@dimen/size_16sp"
                     android:textStyle="bold" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="@dimen/margin_8dp"
+                    android:layout_marginLeft="@dimen/margin_16dp"
+                    android:layout_marginStart="@dimen/margin_16dp"
                     android:text="@string/content_q_1"
                     android:textColor="@color/questionTextColor" />
 
@@ -76,32 +82,38 @@
                         android:id="@+id/button_1_1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="6dp"
+
+                        android:layout_marginBottom="@dimen/margin_4dp"
+                        android:layout_marginLeft="@dimen/margin_16dp"
+                        android:layout_marginStart="@dimen/margin_16dp"
                         android:onClick="onCheckedQuestion1"
                         android:text="@string/option_q_1_1"
                         android:textColor="@color/optionTextColor"
-                        android:textSize="12sp" />
+                        android:textSize="@dimen/size_12sp" />
 
                     <RadioButton
                         android:id="@+id/button_1_2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="6dp"
+                        android:layout_marginBottom="@dimen/margin_4dp"
+                        android:layout_marginLeft="@dimen/margin_16dp"
+                        android:layout_marginStart="@dimen/margin_16dp"
                         android:onClick="onCheckedQuestion1"
                         android:text="@string/option_q_1_2"
                         android:textColor="@color/optionTextColor"
-                        android:textSize="12sp" />
+                        android:textSize="@dimen/size_12sp" />
 
                     <RadioButton
                         android:id="@+id/button_1_3"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginBottom="5dp"
-                        android:layout_marginLeft="6dp"
+                        android:layout_marginBottom="@dimen/margin_22dp"
+                        android:layout_marginLeft="@dimen/margin_16dp"
+                        android:layout_marginStart="@dimen/margin_16dp"
                         android:onClick="onCheckedQuestion1"
                         android:text="@string/option_q_1_3"
                         android:textColor="@color/optionTextColor"
-                        android:textSize="12sp" />
+                        android:textSize="@dimen/size_12sp" />
 
                 </RadioGroup>
             </LinearLayout>
@@ -112,14 +124,15 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_marginTop="5dp"
+            android:layout_marginTop="@dimen/margin_8dp"
             app:cardBackgroundColor="@color/cardViewColor"
-            app:cardCornerRadius="10dp"
-            app:cardElevation="5dp"
+            app:cardCornerRadius="@dimen/corner_10dp"
+            app:cardElevation="@dimen/elevation_5dp"
             app:cardPreventCornerOverlap="true"
             app:cardUseCompatPadding="true">
 
             <LinearLayout
+                android:id="@+id/layout_2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
@@ -128,19 +141,22 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="5dp"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="@dimen/margin_8dp"
+                    android:layout_marginLeft="@dimen/margin_16dp"
+                    android:layout_marginStart="@dimen/margin_16dp"
+                    android:layout_marginTop="@dimen/margin_16dp"
                     android:text="@string/title_q_2"
                     android:textAllCaps="true"
                     android:textColor="@color/titleTextColor"
-                    android:textSize="16sp"
+                    android:textSize="@dimen/size_16sp"
                     android:textStyle="bold" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="@dimen/margin_8dp"
+                    android:layout_marginLeft="@dimen/margin_16dp"
+                    android:layout_marginStart="@dimen/margin_16dp"
                     android:text="@string/content_q_2"
                     android:textColor="@color/questionTextColor" />
 
@@ -154,32 +170,37 @@
                         android:id="@+id/button_2_1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="6dp"
+                        android:layout_marginBottom="@dimen/margin_4dp"
+                        android:layout_marginLeft="@dimen/margin_16dp"
+                        android:layout_marginStart="@dimen/margin_16dp"
                         android:onClick="onCheckedQuestion2"
                         android:text="@string/option_q_2_1"
                         android:textColor="@color/optionTextColor"
-                        android:textSize="12sp" />
+                        android:textSize="@dimen/size_12sp" />
 
                     <RadioButton
                         android:id="@+id/button_2_2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="6dp"
+                        android:layout_marginBottom="@dimen/margin_4dp"
+                        android:layout_marginLeft="@dimen/margin_16dp"
+                        android:layout_marginStart="@dimen/margin_16dp"
                         android:onClick="onCheckedQuestion2"
                         android:text="@string/option_q_2_2"
                         android:textColor="@color/optionTextColor"
-                        android:textSize="12sp" />
+                        android:textSize="@dimen/size_12sp" />
 
                     <RadioButton
                         android:id="@+id/button_2_3"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginBottom="5dp"
-                        android:layout_marginLeft="6dp"
+                        android:layout_marginBottom="@dimen/margin_22dp"
+                        android:layout_marginLeft="@dimen/margin_16dp"
+                        android:layout_marginStart="@dimen/margin_16dp"
                         android:onClick="onCheckedQuestion2"
                         android:text="@string/option_q_2_3"
                         android:textColor="@color/optionTextColor"
-                        android:textSize="12sp" />
+                        android:textSize="@dimen/size_12sp" />
 
                 </RadioGroup>
             </LinearLayout>
@@ -190,14 +211,15 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_marginTop="5dp"
+            android:layout_marginTop="@dimen/margin_8dp"
             app:cardBackgroundColor="@color/cardViewColor"
-            app:cardCornerRadius="10dp"
-            app:cardElevation="5dp"
+            app:cardCornerRadius="@dimen/corner_10dp"
+            app:cardElevation="@dimen/elevation_5dp"
             app:cardPreventCornerOverlap="true"
             app:cardUseCompatPadding="true">
 
             <LinearLayout
+                android:id="@+id/layout_3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
@@ -206,19 +228,22 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="5dp"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="@dimen/margin_8dp"
+                    android:layout_marginLeft="@dimen/margin_16dp"
+                    android:layout_marginStart="@dimen/margin_16dp"
+                    android:layout_marginTop="@dimen/margin_16dp"
                     android:text="@string/title_q_3"
                     android:textAllCaps="true"
                     android:textColor="@color/titleTextColor"
-                    android:textSize="16sp"
+                    android:textSize="@dimen/size_16sp"
                     android:textStyle="bold" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="@dimen/margin_8dp"
+                    android:layout_marginLeft="@dimen/margin_16dp"
+                    android:layout_marginStart="@dimen/margin_16dp"
                     android:text="@string/content_q_3"
                     android:textColor="@color/questionTextColor" />
 
@@ -232,32 +257,37 @@
                         android:id="@+id/button_3_1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="6dp"
+                        android:layout_marginBottom="@dimen/margin_4dp"
+                        android:layout_marginLeft="@dimen/margin_16dp"
+                        android:layout_marginStart="@dimen/margin_16dp"
                         android:onClick="onCheckedQuestion3"
                         android:text="@string/option_q_3_1"
                         android:textColor="@color/optionTextColor"
-                        android:textSize="12sp" />
+                        android:textSize="@dimen/size_12sp" />
 
                     <RadioButton
                         android:id="@+id/button_3_2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="6dp"
+                        android:layout_marginBottom="@dimen/margin_4dp"
+                        android:layout_marginLeft="@dimen/margin_16dp"
+                        android:layout_marginStart="@dimen/margin_16dp"
                         android:onClick="onCheckedQuestion3"
                         android:text="@string/option_q_3_2"
                         android:textColor="@color/optionTextColor"
-                        android:textSize="12sp" />
+                        android:textSize="@dimen/size_12sp" />
 
                     <RadioButton
                         android:id="@+id/button_3_3"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginBottom="5dp"
-                        android:layout_marginLeft="6dp"
+                        android:layout_marginBottom="@dimen/margin_22dp"
+                        android:layout_marginLeft="@dimen/margin_16dp"
+                        android:layout_marginStart="@dimen/margin_16dp"
                         android:onClick="onCheckedQuestion3"
                         android:text="@string/option_q_3_3"
                         android:textColor="@color/optionTextColor"
-                        android:textSize="12sp" />
+                        android:textSize="@dimen/size_12sp" />
 
                 </RadioGroup>
             </LinearLayout>
@@ -268,10 +298,10 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_marginTop="5dp"
+            android:layout_marginTop="@dimen/margin_8dp"
             app:cardBackgroundColor="@color/cardViewColor"
-            app:cardCornerRadius="10dp"
-            app:cardElevation="5dp"
+            app:cardCornerRadius="@dimen/corner_10dp"
+            app:cardElevation="@dimen/elevation_5dp"
             app:cardPreventCornerOverlap="true"
             app:cardUseCompatPadding="true">
 
@@ -284,19 +314,22 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="5dp"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="@dimen/margin_8dp"
+                    android:layout_marginLeft="@dimen/margin_16dp"
+                    android:layout_marginStart="@dimen/margin_16dp"
+                    android:layout_marginTop="@dimen/margin_16dp"
                     android:text="@string/title_q_4"
                     android:textAllCaps="true"
                     android:textColor="@color/titleTextColor"
-                    android:textSize="16sp"
+                    android:textSize="@dimen/size_16sp"
                     android:textStyle="bold" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="@dimen/margin_8dp"
+                    android:layout_marginLeft="@dimen/margin_16dp"
+                    android:layout_marginStart="@dimen/margin_16dp"
                     android:text="@string/content_q_4"
                     android:textColor="@color/questionTextColor" />
 
@@ -310,41 +343,49 @@
                         android:id="@+id/button_4_1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="6dp"
+                        android:layout_marginBottom="@dimen/margin_4dp"
+                        android:layout_marginLeft="@dimen/margin_16dp"
+                        android:layout_marginStart="@dimen/margin_16dp"
                         android:onClick="onCheckedQuestion4"
                         android:text="@string/option_q_4_1"
                         android:textColor="@color/optionTextColor"
-                        android:textSize="12sp" />
+                        android:textSize="@dimen/size_12sp" />
 
                     <CheckBox
                         android:id="@+id/button_4_2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="6dp"
+                        android:layout_marginBottom="@dimen/margin_4dp"
+                        android:layout_marginLeft="@dimen/margin_16dp"
+                        android:layout_marginStart="@dimen/margin_16dp"
                         android:onClick="onCheckedQuestion4"
                         android:text="@string/option_q_4_2"
                         android:textColor="@color/optionTextColor"
-                        android:textSize="12sp" />
+                        android:textSize="@dimen/size_12sp" />
 
                     <CheckBox
                         android:id="@+id/button_4_3"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="6dp"
+                        android:layout_marginBottom="@dimen/margin_4dp"
+                        android:layout_marginLeft="@dimen/margin_16dp"
+                        android:layout_marginStart="@dimen/margin_16dp"
                         android:onClick="onCheckedQuestion4"
                         android:text="@string/option_q_4_3"
                         android:textColor="@color/optionTextColor"
-                        android:textSize="12sp" />
+                        android:textSize="@dimen/size_12sp" />
 
                     <CheckBox
                         android:id="@+id/button_4_4"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="6dp"
+
+                        android:layout_marginLeft="@dimen/margin_16dp"
+                        android:layout_marginStart="@dimen/margin_16dp"
                         android:onClick="onCheckedQuestion4"
                         android:text="@string/option_q_4_4"
                         android:textColor="@color/optionTextColor"
-                        android:textSize="12sp" />
+                        android:textSize="@dimen/size_12sp" />
 
                 </LinearLayout>
 
@@ -352,8 +393,10 @@
                     android:id="@+id/note_q_4"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="5dp"
-                    android:layout_marginLeft="10dp"
+                    android:layout_gravity="end"
+                    android:layout_marginBottom="@dimen/margin_4dp"
+                    android:layout_marginEnd="@dimen/margin_16dp"
+                    android:layout_marginRight="@dimen/margin_16dp"
                     android:text="@string/limit_2"
                     android:textColor="@color/note" />
 
@@ -365,14 +408,15 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_marginTop="5dp"
+            android:layout_marginTop="@dimen/margin_8dp"
             app:cardBackgroundColor="@color/cardViewColor"
-            app:cardCornerRadius="10dp"
-            app:cardElevation="5dp"
+            app:cardCornerRadius="@dimen/corner_10dp"
+            app:cardElevation="@dimen/elevation_5dp"
             app:cardPreventCornerOverlap="true"
             app:cardUseCompatPadding="true">
 
             <LinearLayout
+                android:id="@+id/layout_5"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
@@ -381,19 +425,22 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="5dp"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="@dimen/margin_8dp"
+                    android:layout_marginLeft="@dimen/margin_16dp"
+                    android:layout_marginStart="@dimen/margin_16dp"
+                    android:layout_marginTop="@dimen/margin_16dp"
                     android:text="@string/title_q_5"
                     android:textAllCaps="true"
                     android:textColor="@color/titleTextColor"
-                    android:textSize="16sp"
+                    android:textSize="@dimen/size_16sp"
                     android:textStyle="bold" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="@dimen/margin_8dp"
+                    android:layout_marginLeft="@dimen/margin_16dp"
+                    android:layout_marginStart="@dimen/margin_16dp"
                     android:text="@string/content_q_5"
                     android:textColor="@color/questionTextColor" />
 
@@ -401,7 +448,10 @@
                     android:id="@+id/edit_text_q5"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="10dp"
+                    android:layout_marginLeft="@dimen/margin_16dp"
+                    android:layout_marginStart="@dimen/margin_16dp"
+                    android:hint="@string/type_your_answer"
+                    android:inputType="text"
                     android:textColor="@color/optionTextColor" />
 
             </LinearLayout>
@@ -412,10 +462,10 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_marginTop="5dp"
+            android:layout_marginTop="@dimen/margin_8dp"
             app:cardBackgroundColor="@color/cardViewColor"
-            app:cardCornerRadius="10dp"
-            app:cardElevation="5dp"
+            app:cardCornerRadius="@dimen/corner_10dp"
+            app:cardElevation="@dimen/elevation_5dp"
             app:cardPreventCornerOverlap="true"
             app:cardUseCompatPadding="true">
 
@@ -428,19 +478,22 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="5dp"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="@dimen/margin_8dp"
+                    android:layout_marginLeft="@dimen/margin_16dp"
+                    android:layout_marginStart="@dimen/margin_16dp"
+                    android:layout_marginTop="@dimen/margin_16dp"
                     android:text="@string/title_q_6"
                     android:textAllCaps="true"
                     android:textColor="@color/titleTextColor"
-                    android:textSize="16sp"
+                    android:textSize="@dimen/size_16sp"
                     android:textStyle="bold" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="@dimen/margin_8dp"
+                    android:layout_marginLeft="@dimen/margin_16dp"
+                    android:layout_marginStart="@dimen/margin_16dp"
                     android:text="@string/content_q_6"
                     android:textColor="@color/questionTextColor" />
 
@@ -454,41 +507,49 @@
                         android:id="@+id/button_6_1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="6dp"
+                        android:layout_marginBottom="@dimen/margin_4dp"
+                        android:layout_marginLeft="@dimen/margin_16dp"
+                        android:layout_marginStart="@dimen/margin_16dp"
                         android:onClick="onCheckedQuestion6"
                         android:text="@string/option_q_6_1"
                         android:textColor="@color/optionTextColor"
-                        android:textSize="12sp" />
+                        android:textSize="@dimen/size_12sp" />
 
                     <CheckBox
                         android:id="@+id/button_6_2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="6dp"
+                        android:layout_marginBottom="@dimen/margin_4dp"
+                        android:layout_marginLeft="@dimen/margin_16dp"
+                        android:layout_marginStart="@dimen/margin_16dp"
                         android:onClick="onCheckedQuestion6"
                         android:text="@string/option_q_6_2"
                         android:textColor="@color/optionTextColor"
-                        android:textSize="12sp" />
+                        android:textSize="@dimen/size_12sp" />
 
                     <CheckBox
                         android:id="@+id/button_6_3"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="6dp"
+                        android:layout_marginBottom="@dimen/margin_4dp"
+                        android:layout_marginLeft="@dimen/margin_16dp"
+                        android:layout_marginStart="@dimen/margin_16dp"
                         android:onClick="onCheckedQuestion6"
                         android:text="@string/option_q_6_3"
                         android:textColor="@color/optionTextColor"
-                        android:textSize="12sp" />
+                        android:textSize="@dimen/size_12sp" />
 
                     <CheckBox
                         android:id="@+id/button_6_4"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="6dp"
+
+                        android:layout_marginLeft="@dimen/margin_16dp"
+                        android:layout_marginStart="@dimen/margin_16dp"
                         android:onClick="onCheckedQuestion6"
                         android:text="@string/option_q_6_4"
                         android:textColor="@color/optionTextColor"
-                        android:textSize="12sp" />
+                        android:textSize="@dimen/size_12sp" />
 
                 </LinearLayout>
 
@@ -496,8 +557,10 @@
                     android:id="@+id/note_q_6"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="5dp"
-                    android:layout_marginLeft="10dp"
+                    android:layout_gravity="end"
+                    android:layout_marginBottom="@dimen/margin_4dp"
+                    android:layout_marginEnd="@dimen/margin_16dp"
+                    android:layout_marginRight="@dimen/margin_16dp"
                     android:text="@string/limit_2"
                     android:textColor="@color/note"
 
@@ -511,10 +574,10 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_marginTop="5dp"
+            android:layout_marginTop="@dimen/margin_8dp"
             app:cardBackgroundColor="@color/cardViewColor"
-            app:cardCornerRadius="10dp"
-            app:cardElevation="5dp"
+            app:cardCornerRadius="@dimen/corner_10dp"
+            app:cardElevation="@dimen/elevation_5dp"
             app:cardPreventCornerOverlap="true"
             app:cardUseCompatPadding="true">
 
@@ -527,19 +590,22 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="5dp"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="@dimen/margin_8dp"
+                    android:layout_marginLeft="@dimen/margin_16dp"
+                    android:layout_marginStart="@dimen/margin_16dp"
+                    android:layout_marginTop="@dimen/margin_16dp"
                     android:text="@string/title_q_7"
                     android:textAllCaps="true"
                     android:textColor="@color/titleTextColor"
-                    android:textSize="16sp"
+                    android:textSize="@dimen/size_16sp"
                     android:textStyle="bold" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="@dimen/margin_8dp"
+                    android:layout_marginLeft="@dimen/margin_16dp"
+                    android:layout_marginStart="@dimen/margin_16dp"
                     android:text="@string/content_q_7"
                     android:textColor="@color/questionTextColor" />
 
@@ -554,41 +620,49 @@
                         android:id="@+id/button_7_1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="6dp"
+                        android:layout_marginBottom="@dimen/margin_4dp"
+                        android:layout_marginLeft="@dimen/margin_16dp"
+                        android:layout_marginStart="@dimen/margin_16dp"
                         android:onClick="onCheckedQuestion7"
                         android:text="@string/option_q_7_1"
                         android:textColor="@color/optionTextColor"
-                        android:textSize="12sp" />
+                        android:textSize="@dimen/size_12sp" />
 
                     <RadioButton
                         android:id="@+id/button_7_2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="6dp"
+                        android:layout_marginBottom="@dimen/margin_4dp"
+                        android:layout_marginLeft="@dimen/margin_16dp"
+                        android:layout_marginStart="@dimen/margin_16dp"
                         android:onClick="onCheckedQuestion7"
                         android:text="@string/option_q_7_2"
                         android:textColor="@color/optionTextColor"
-                        android:textSize="12sp" />
+                        android:textSize="@dimen/size_12sp" />
 
                     <RadioButton
                         android:id="@+id/button_7_3"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="6dp"
+                        android:layout_marginBottom="@dimen/margin_4dp"
+                        android:layout_marginLeft="@dimen/margin_16dp"
+                        android:layout_marginStart="@dimen/margin_16dp"
                         android:onClick="onCheckedQuestion7"
                         android:text="@string/option_q_7_3"
                         android:textColor="@color/optionTextColor"
-                        android:textSize="12sp" />
+                        android:textSize="@dimen/size_12sp" />
 
                     <RadioButton
                         android:id="@+id/button_7_4"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="6dp"
+                        android:layout_marginBottom="@dimen/margin_22dp"
+                        android:layout_marginLeft="@dimen/margin_16dp"
+                        android:layout_marginStart="@dimen/margin_16dp"
                         android:onClick="onCheckedQuestion7"
                         android:text="@string/option_q_7_4"
                         android:textColor="@color/optionTextColor"
-                        android:textSize="12sp" />
+                        android:textSize="@dimen/size_12sp" />
                 </RadioGroup>
 
             </LinearLayout>
@@ -599,10 +673,10 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_marginTop="5dp"
+            android:layout_marginTop="@dimen/margin_8dp"
             app:cardBackgroundColor="@color/cardViewColor"
-            app:cardCornerRadius="10dp"
-            app:cardElevation="5dp"
+            app:cardCornerRadius="@dimen/corner_10dp"
+            app:cardElevation="@dimen/elevation_5dp"
             app:cardPreventCornerOverlap="true"
             app:cardUseCompatPadding="true">
 
@@ -615,19 +689,22 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="5dp"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="@dimen/margin_8dp"
+                    android:layout_marginLeft="@dimen/margin_16dp"
+                    android:layout_marginStart="@dimen/margin_16dp"
+                    android:layout_marginTop="@dimen/margin_16dp"
                     android:text="@string/title_q_8"
                     android:textAllCaps="true"
                     android:textColor="@color/titleTextColor"
-                    android:textSize="16sp"
+                    android:textSize="@dimen/size_16sp"
                     android:textStyle="bold" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="@dimen/margin_8dp"
+                    android:layout_marginLeft="@dimen/margin_16dp"
+                    android:layout_marginStart="@dimen/margin_16dp"
                     android:text="@string/content_q_8"
                     android:textColor="@color/questionTextColor" />
 
@@ -641,42 +718,49 @@
                         android:id="@+id/button_8_1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="6dp"
+                        android:layout_marginBottom="@dimen/margin_4dp"
+                        android:layout_marginLeft="@dimen/margin_16dp"
+                        android:layout_marginStart="@dimen/margin_16dp"
                         android:onClick="onCheckedQuestion8"
                         android:text="@string/option_q_8_1"
                         android:textColor="@color/optionTextColor"
-                        android:textSize="12sp" />
+                        android:textSize="@dimen/size_12sp" />
 
                     <CheckBox
                         android:id="@+id/button_8_2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="6dp"
+                        android:layout_marginBottom="@dimen/margin_4dp"
+                        android:layout_marginLeft="@dimen/margin_16dp"
+                        android:layout_marginStart="@dimen/margin_16dp"
                         android:onClick="onCheckedQuestion8"
                         android:text="@string/option_q_8_2"
                         android:textColor="@color/optionTextColor"
-                        android:textSize="12sp" />
+                        android:textSize="@dimen/size_12sp" />
 
                     <CheckBox
                         android:id="@+id/button_8_3"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="6dp"
+                        android:layout_marginBottom="@dimen/margin_4dp"
+                        android:layout_marginLeft="@dimen/margin_16dp"
+                        android:layout_marginStart="@dimen/margin_16dp"
                         android:onClick="onCheckedQuestion8"
                         android:text="@string/option_q_8_3"
                         android:textColor="@color/optionTextColor"
-                        android:textSize="12sp" />
+                        android:textSize="@dimen/size_12sp" />
 
                     <CheckBox
                         android:id="@+id/button_8_4"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginBottom="5dp"
-                        android:layout_marginLeft="6dp"
+
+                        android:layout_marginLeft="@dimen/margin_16dp"
+                        android:layout_marginStart="@dimen/margin_16dp"
                         android:onClick="onCheckedQuestion8"
                         android:text="@string/option_q_8_4"
                         android:textColor="@color/optionTextColor"
-                        android:textSize="12sp" />
+                        android:textSize="@dimen/size_12sp" />
 
                 </LinearLayout>
 
@@ -684,8 +768,10 @@
                     android:id="@+id/note_q_8"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="5dp"
-                    android:layout_marginLeft="10dp"
+                    android:layout_gravity="end"
+                    android:layout_marginBottom="@dimen/margin_4dp"
+                    android:layout_marginEnd="@dimen/margin_16dp"
+                    android:layout_marginRight="@dimen/margin_16dp"
                     android:text="@string/limit_2"
                     android:textColor="@color/note" />
             </LinearLayout>
@@ -696,14 +782,15 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_marginTop="5dp"
+            android:layout_marginTop="@dimen/margin_8dp"
             app:cardBackgroundColor="@color/cardViewColor"
-            app:cardCornerRadius="10dp"
-            app:cardElevation="5dp"
+            app:cardCornerRadius="@dimen/corner_10dp"
+            app:cardElevation="@dimen/elevation_5dp"
             app:cardPreventCornerOverlap="true"
             app:cardUseCompatPadding="true">
 
             <LinearLayout
+                android:id="@+id/layout_9"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
@@ -712,19 +799,22 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="5dp"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="@dimen/margin_8dp"
+                    android:layout_marginLeft="@dimen/margin_16dp"
+                    android:layout_marginStart="@dimen/margin_16dp"
+                    android:layout_marginTop="@dimen/margin_16dp"
                     android:text="@string/title_q_9"
                     android:textAllCaps="true"
                     android:textColor="@color/titleTextColor"
-                    android:textSize="16sp"
+                    android:textSize="@dimen/size_16sp"
                     android:textStyle="bold" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="@dimen/margin_8dp"
+                    android:layout_marginLeft="@dimen/margin_16dp"
+                    android:layout_marginStart="@dimen/margin_16dp"
                     android:text="@string/content_q_9"
                     android:textColor="@color/questionTextColor" />
 
@@ -738,42 +828,50 @@
                         android:id="@+id/button_9_1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="6dp"
+                        android:layout_marginBottom="@dimen/margin_4dp"
+                        android:layout_marginLeft="@dimen/margin_16dp"
+                        android:layout_marginStart="@dimen/margin_16dp"
                         android:onClick="onCheckedQuestion9"
                         android:text="@string/option_q_9_1"
                         android:textColor="@color/optionTextColor"
-                        android:textSize="12sp" />
+                        android:textSize="@dimen/size_12sp" />
 
                     <RadioButton
                         android:id="@+id/button_9_2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="6dp"
+                        android:layout_marginBottom="@dimen/margin_4dp"
+                        android:layout_marginLeft="@dimen/margin_16dp"
+                        android:layout_marginStart="@dimen/margin_16dp"
                         android:onClick="onCheckedQuestion9"
                         android:text="@string/option_q_9_2"
                         android:textColor="@color/optionTextColor"
-                        android:textSize="12sp" />
+                        android:textSize="@dimen/size_12sp" />
 
                     <RadioButton
                         android:id="@+id/button_9_3"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="6dp"
+                        android:layout_marginBottom="@dimen/margin_4dp"
+                        android:layout_marginLeft="@dimen/margin_16dp"
+                        android:layout_marginStart="@dimen/margin_16dp"
                         android:onClick="onCheckedQuestion9"
                         android:text="@string/option_q_9_3"
                         android:textColor="@color/optionTextColor"
-                        android:textSize="12sp" />
+                        android:textSize="@dimen/size_12sp" />
 
                     <RadioButton
                         android:id="@+id/button_9_4"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginBottom="5dp"
-                        android:layout_marginLeft="6dp"
+                        android:layout_marginBottom="@dimen/margin_22dp"
+                        android:layout_marginLeft="@dimen/margin_16dp"
+                        android:layout_marginStart="@dimen/margin_16dp"
                         android:onClick="onCheckedQuestion9"
                         android:text="@string/option_q_9_4"
                         android:textColor="@color/optionTextColor"
-                        android:textSize="12sp" />
+                        android:textSize="@dimen/size_12sp"
+                        tools:ignore="TooManyViews" />
 
                 </RadioGroup>
             </LinearLayout>
@@ -784,14 +882,15 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_marginTop="5dp"
+            android:layout_marginTop="@dimen/margin_8dp"
             app:cardBackgroundColor="@color/cardViewColor"
-            app:cardCornerRadius="10dp"
-            app:cardElevation="5dp"
+            app:cardCornerRadius="@dimen/corner_10dp"
+            app:cardElevation="@dimen/elevation_5dp"
             app:cardPreventCornerOverlap="true"
             app:cardUseCompatPadding="true">
 
             <LinearLayout
+                android:id="@+id/layout_10"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
@@ -800,19 +899,22 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="5dp"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="@dimen/margin_8dp"
+                    android:layout_marginLeft="@dimen/margin_16dp"
+                    android:layout_marginStart="@dimen/margin_16dp"
+                    android:layout_marginTop="@dimen/margin_16dp"
                     android:text="@string/title_q_10"
                     android:textAllCaps="true"
                     android:textColor="@color/titleTextColor"
-                    android:textSize="16sp"
+                    android:textSize="@dimen/size_16sp"
                     android:textStyle="bold" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="@dimen/margin_8dp"
+                    android:layout_marginLeft="@dimen/margin_16dp"
+                    android:layout_marginStart="@dimen/margin_16dp"
                     android:text="@string/content_q_10"
                     android:textColor="@color/questionTextColor" />
 
@@ -827,42 +929,49 @@
                         android:id="@+id/button_10_1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="6dp"
-                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="@dimen/margin_4dp"
+                        android:layout_marginLeft="@dimen/margin_16dp"
+                        android:layout_marginStart="@dimen/margin_16dp"
                         android:onClick="onCheckedQuestion10"
                         android:text="@string/option_q_10_1"
                         android:textColor="@color/optionTextColor"
-                        android:textSize="12sp" />
+                        android:textSize="@dimen/size_12sp" />
 
                     <RadioButton
                         android:id="@+id/button_10_2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="6dp"
+                        android:layout_marginBottom="@dimen/margin_4dp"
+                        android:layout_marginLeft="@dimen/margin_16dp"
+                        android:layout_marginStart="@dimen/margin_16dp"
                         android:onClick="onCheckedQuestion10"
                         android:text="@string/option_q_10_2"
                         android:textColor="@color/optionTextColor"
-                        android:textSize="12sp" />
+                        android:textSize="@dimen/size_12sp" />
 
                     <RadioButton
                         android:id="@+id/button_10_3"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="6dp"
+                        android:layout_marginBottom="@dimen/margin_4dp"
+                        android:layout_marginLeft="@dimen/margin_16dp"
+                        android:layout_marginStart="@dimen/margin_16dp"
                         android:onClick="onCheckedQuestion10"
                         android:text="@string/option_q_10_3"
                         android:textColor="@color/optionTextColor"
-                        android:textSize="12sp" />
+                        android:textSize="@dimen/size_12sp" />
 
                     <RadioButton
                         android:id="@+id/button_10_4"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="6dp"
+                        android:layout_marginBottom="@dimen/margin_22dp"
+                        android:layout_marginLeft="@dimen/margin_16dp"
+                        android:layout_marginStart="@dimen/margin_16dp"
                         android:onClick="onCheckedQuestion10"
                         android:text="@string/option_q_10_4"
                         android:textColor="@color/optionTextColor"
-                        android:textSize="12sp" />
+                        android:textSize="@dimen/size_12sp" />
                 </RadioGroup>
 
 
@@ -878,7 +987,7 @@
                 android:id="@+id/submit"
                 style="@style/quizAppButton"
                 android:layout_width="wrap_content"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:onClick="clickSubmit"
                 android:text="@string/submit"
@@ -887,8 +996,9 @@
             <Button
                 style="@style/quizAppButton"
                 android:layout_width="wrap_content"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
                 android:layout_gravity="center"
+                android:layout_toEndOf="@id/submit"
                 android:layout_toRightOf="@id/submit"
                 android:onClick="clickReset"
                 android:text="@string/reset"
