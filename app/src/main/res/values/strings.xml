@@ -1,5 +1,7 @@
 <resources>
     <string name="app_name">Quiz App</string>
+    <string name="title">Welcome to Quiz !</string>
+
     <string name="title_q_1">Question 1</string>
     <string name="content_q_1">Which company found Android ?</string>
     <string name="option_q_1_1">Google</string>
@@ -65,11 +67,9 @@
 
     <string name="your_score_is">Your Score is</string>
     <string name="make_sure_answer_questions">Please make sure you answer all the questions</string>
+
     <string name="submit">Submit</string>
     <string name="reset">Reset</string>
-
-    <string name="limit_1">(Note: Only 1 option allowed)</string>
     <string name="limit_2">(Note: Only 2 options allowed)</string>
-    <string name="title">Welcome to Quiz!</string>
     <string name="type_your_answer">type your answer</string>
 </resources>

@@ -10,13 +10,13 @@
     tools:targetApi="11">
 
     <LinearLayout
+        android:id="@+id/linear"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:clickable="true"
         android:focusable="true"
         android:focusableInTouchMode="true"
         android:orientation="vertical">
-
 
         <TextView
             android:id="@+id/textView1"
@@ -28,9 +28,8 @@
             android:text="@string/title"
             android:textAllCaps="true"
             android:textColor="@color/welcomeTextColor"
-            android:textSize="@dimen/size_16sp"
+            android:textSize="24sp"
             android:textStyle="bold" />
-
 
         <android.support.v7.widget.CardView
             android:layout_width="match_parent"
@@ -42,7 +41,6 @@
             app:cardElevation="@dimen/elevation_5dp"
             app:cardPreventCornerOverlap="true"
             app:cardUseCompatPadding="true">
-
 
             <LinearLayout
                 android:id="@+id/layout_1"
@@ -60,7 +58,7 @@
                     android:text="@string/title_q_1"
                     android:textAllCaps="true"
                     android:textColor="@color/titleTextColor"
-                    android:textSize="@dimen/size_16sp"
+                    android:textSize="@dimen/size_18sp"
                     android:textStyle="bold" />
 
                 <TextView
@@ -70,7 +68,8 @@
                     android:layout_marginLeft="@dimen/margin_16dp"
                     android:layout_marginStart="@dimen/margin_16dp"
                     android:text="@string/content_q_1"
-                    android:textColor="@color/questionTextColor" />
+                    android:textColor="@color/questionTextColor"
+                    android:textSize="20sp" />
 
                 <RadioGroup
                     android:id="@+id/radioGroup1"
@@ -82,14 +81,13 @@
                         android:id="@+id/button_1_1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-
                         android:layout_marginBottom="@dimen/margin_4dp"
                         android:layout_marginLeft="@dimen/margin_16dp"
                         android:layout_marginStart="@dimen/margin_16dp"
                         android:onClick="onCheckedQuestion1"
                         android:text="@string/option_q_1_1"
                         android:textColor="@color/optionTextColor"
-                        android:textSize="@dimen/size_12sp" />
+                        android:textSize="@dimen/size_16sp" />
 
                     <RadioButton
                         android:id="@+id/button_1_2"
@@ -101,7 +99,7 @@
                         android:onClick="onCheckedQuestion1"
                         android:text="@string/option_q_1_2"
                         android:textColor="@color/optionTextColor"
-                        android:textSize="@dimen/size_12sp" />
+                        android:textSize="@dimen/size_16sp" />
 
                     <RadioButton
                         android:id="@+id/button_1_3"
@@ -113,12 +111,10 @@
                         android:onClick="onCheckedQuestion1"
                         android:text="@string/option_q_1_3"
                         android:textColor="@color/optionTextColor"
-                        android:textSize="@dimen/size_12sp" />
-
+                        android:textSize="@dimen/size_16sp" />
                 </RadioGroup>
             </LinearLayout>
         </android.support.v7.widget.CardView>
-
 
         <android.support.v7.widget.CardView
             android:layout_width="match_parent"
@@ -137,7 +133,6 @@
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
 
-
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -148,7 +143,7 @@
                     android:text="@string/title_q_2"
                     android:textAllCaps="true"
                     android:textColor="@color/titleTextColor"
-                    android:textSize="@dimen/size_16sp"
+                    android:textSize="@dimen/size_18sp"
                     android:textStyle="bold" />
 
                 <TextView
@@ -158,7 +153,8 @@
                     android:layout_marginLeft="@dimen/margin_16dp"
                     android:layout_marginStart="@dimen/margin_16dp"
                     android:text="@string/content_q_2"
-                    android:textColor="@color/questionTextColor" />
+                    android:textColor="@color/questionTextColor"
+                    android:textSize="@dimen/size_20sp" />
 
                 <RadioGroup
                     android:id="@+id/radioGroup2"
@@ -176,7 +172,7 @@
                         android:onClick="onCheckedQuestion2"
                         android:text="@string/option_q_2_1"
                         android:textColor="@color/optionTextColor"
-                        android:textSize="@dimen/size_12sp" />
+                        android:textSize="@dimen/size_16sp" />
 
                     <RadioButton
                         android:id="@+id/button_2_2"
@@ -188,7 +184,7 @@
                         android:onClick="onCheckedQuestion2"
                         android:text="@string/option_q_2_2"
                         android:textColor="@color/optionTextColor"
-                        android:textSize="@dimen/size_12sp" />
+                        android:textSize="@dimen/size_16sp" />
 
                     <RadioButton
                         android:id="@+id/button_2_3"
@@ -200,12 +196,10 @@
                         android:onClick="onCheckedQuestion2"
                         android:text="@string/option_q_2_3"
                         android:textColor="@color/optionTextColor"
-                        android:textSize="@dimen/size_12sp" />
-
+                        android:textSize="@dimen/size_16sp" />
                 </RadioGroup>
             </LinearLayout>
         </android.support.v7.widget.CardView>
-
 
         <android.support.v7.widget.CardView
             android:layout_width="match_parent"
@@ -224,7 +218,6 @@
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
 
-
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -235,7 +228,7 @@
                     android:text="@string/title_q_3"
                     android:textAllCaps="true"
                     android:textColor="@color/titleTextColor"
-                    android:textSize="@dimen/size_16sp"
+                    android:textSize="@dimen/size_18sp"
                     android:textStyle="bold" />
 
                 <TextView
@@ -245,7 +238,8 @@
                     android:layout_marginLeft="@dimen/margin_16dp"
                     android:layout_marginStart="@dimen/margin_16dp"
                     android:text="@string/content_q_3"
-                    android:textColor="@color/questionTextColor" />
+                    android:textColor="@color/questionTextColor"
+                    android:textSize="@dimen/size_20sp" />
 
                 <RadioGroup
                     android:id="@+id/radioGroup3"
@@ -263,7 +257,7 @@
                         android:onClick="onCheckedQuestion3"
                         android:text="@string/option_q_3_1"
                         android:textColor="@color/optionTextColor"
-                        android:textSize="@dimen/size_12sp" />
+                        android:textSize="@dimen/size_16sp" />
 
                     <RadioButton
                         android:id="@+id/button_3_2"
@@ -275,7 +269,7 @@
                         android:onClick="onCheckedQuestion3"
                         android:text="@string/option_q_3_2"
                         android:textColor="@color/optionTextColor"
-                        android:textSize="@dimen/size_12sp" />
+                        android:textSize="@dimen/size_16sp" />
 
                     <RadioButton
                         android:id="@+id/button_3_3"
@@ -287,12 +281,10 @@
                         android:onClick="onCheckedQuestion3"
                         android:text="@string/option_q_3_3"
                         android:textColor="@color/optionTextColor"
-                        android:textSize="@dimen/size_12sp" />
-
+                        android:textSize="@dimen/size_16sp" />
                 </RadioGroup>
             </LinearLayout>
         </android.support.v7.widget.CardView>
-
 
         <android.support.v7.widget.CardView
             android:layout_width="match_parent"
@@ -310,7 +302,6 @@
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
 
-
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -321,7 +312,7 @@
                     android:text="@string/title_q_4"
                     android:textAllCaps="true"
                     android:textColor="@color/titleTextColor"
-                    android:textSize="@dimen/size_16sp"
+                    android:textSize="@dimen/size_18sp"
                     android:textStyle="bold" />
 
                 <TextView
@@ -331,7 +322,8 @@
                     android:layout_marginLeft="@dimen/margin_16dp"
                     android:layout_marginStart="@dimen/margin_16dp"
                     android:text="@string/content_q_4"
-                    android:textColor="@color/questionTextColor" />
+                    android:textColor="@color/questionTextColor"
+                    android:textSize="@dimen/size_20sp" />
 
                 <LinearLayout
                     android:id="@+id/layout_4"
@@ -349,7 +341,7 @@
                         android:onClick="onCheckedQuestion4"
                         android:text="@string/option_q_4_1"
                         android:textColor="@color/optionTextColor"
-                        android:textSize="@dimen/size_12sp" />
+                        android:textSize="@dimen/size_16sp" />
 
                     <CheckBox
                         android:id="@+id/button_4_2"
@@ -361,7 +353,7 @@
                         android:onClick="onCheckedQuestion4"
                         android:text="@string/option_q_4_2"
                         android:textColor="@color/optionTextColor"
-                        android:textSize="@dimen/size_12sp" />
+                        android:textSize="@dimen/size_16sp" />
 
                     <CheckBox
                         android:id="@+id/button_4_3"
@@ -373,20 +365,18 @@
                         android:onClick="onCheckedQuestion4"
                         android:text="@string/option_q_4_3"
                         android:textColor="@color/optionTextColor"
-                        android:textSize="@dimen/size_12sp" />
+                        android:textSize="@dimen/size_16sp" />
 
                     <CheckBox
                         android:id="@+id/button_4_4"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-
                         android:layout_marginLeft="@dimen/margin_16dp"
                         android:layout_marginStart="@dimen/margin_16dp"
                         android:onClick="onCheckedQuestion4"
                         android:text="@string/option_q_4_4"
                         android:textColor="@color/optionTextColor"
-                        android:textSize="@dimen/size_12sp" />
-
+                        android:textSize="@dimen/size_16sp" />
                 </LinearLayout>
 
                 <TextView
@@ -399,10 +389,8 @@
                     android:layout_marginRight="@dimen/margin_16dp"
                     android:text="@string/limit_2"
                     android:textColor="@color/note" />
-
             </LinearLayout>
         </android.support.v7.widget.CardView>
-
 
         <android.support.v7.widget.CardView
             android:layout_width="match_parent"
@@ -421,7 +409,6 @@
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
 
-
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -432,7 +419,7 @@
                     android:text="@string/title_q_5"
                     android:textAllCaps="true"
                     android:textColor="@color/titleTextColor"
-                    android:textSize="@dimen/size_16sp"
+                    android:textSize="@dimen/size_18sp"
                     android:textStyle="bold" />
 
                 <TextView
@@ -442,7 +429,8 @@
                     android:layout_marginLeft="@dimen/margin_16dp"
                     android:layout_marginStart="@dimen/margin_16dp"
                     android:text="@string/content_q_5"
-                    android:textColor="@color/questionTextColor" />
+                    android:textColor="@color/questionTextColor"
+                    android:textSize="@dimen/size_20sp" />
 
                 <EditText
                     android:id="@+id/edit_text_q5"
@@ -453,10 +441,8 @@
                     android:hint="@string/type_your_answer"
                     android:inputType="text"
                     android:textColor="@color/optionTextColor" />
-
             </LinearLayout>
         </android.support.v7.widget.CardView>
-
 
         <android.support.v7.widget.CardView
             android:layout_width="match_parent"
@@ -474,7 +460,6 @@
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
 
-
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -485,7 +470,7 @@
                     android:text="@string/title_q_6"
                     android:textAllCaps="true"
                     android:textColor="@color/titleTextColor"
-                    android:textSize="@dimen/size_16sp"
+                    android:textSize="@dimen/size_18sp"
                     android:textStyle="bold" />
 
                 <TextView
@@ -495,7 +480,8 @@
                     android:layout_marginLeft="@dimen/margin_16dp"
                     android:layout_marginStart="@dimen/margin_16dp"
                     android:text="@string/content_q_6"
-                    android:textColor="@color/questionTextColor" />
+                    android:textColor="@color/questionTextColor"
+                    android:textSize="@dimen/size_20sp" />
 
                 <LinearLayout
                     android:id="@+id/layout_6"
@@ -513,7 +499,7 @@
                         android:onClick="onCheckedQuestion6"
                         android:text="@string/option_q_6_1"
                         android:textColor="@color/optionTextColor"
-                        android:textSize="@dimen/size_12sp" />
+                        android:textSize="@dimen/size_16sp" />
 
                     <CheckBox
                         android:id="@+id/button_6_2"
@@ -525,7 +511,7 @@
                         android:onClick="onCheckedQuestion6"
                         android:text="@string/option_q_6_2"
                         android:textColor="@color/optionTextColor"
-                        android:textSize="@dimen/size_12sp" />
+                        android:textSize="@dimen/size_16sp" />
 
                     <CheckBox
                         android:id="@+id/button_6_3"
@@ -537,20 +523,18 @@
                         android:onClick="onCheckedQuestion6"
                         android:text="@string/option_q_6_3"
                         android:textColor="@color/optionTextColor"
-                        android:textSize="@dimen/size_12sp" />
+                        android:textSize="@dimen/size_16sp" />
 
                     <CheckBox
                         android:id="@+id/button_6_4"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-
                         android:layout_marginLeft="@dimen/margin_16dp"
                         android:layout_marginStart="@dimen/margin_16dp"
                         android:onClick="onCheckedQuestion6"
                         android:text="@string/option_q_6_4"
                         android:textColor="@color/optionTextColor"
-                        android:textSize="@dimen/size_12sp" />
-
+                        android:textSize="@dimen/size_16sp" />
                 </LinearLayout>
 
                 <TextView
@@ -562,13 +546,9 @@
                     android:layout_marginEnd="@dimen/margin_16dp"
                     android:layout_marginRight="@dimen/margin_16dp"
                     android:text="@string/limit_2"
-                    android:textColor="@color/note"
-
-                    />
-
+                    android:textColor="@color/note" />
             </LinearLayout>
         </android.support.v7.widget.CardView>
-
 
         <android.support.v7.widget.CardView
             android:layout_width="match_parent"
@@ -585,7 +565,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
-
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -597,7 +576,7 @@
                     android:text="@string/title_q_7"
                     android:textAllCaps="true"
                     android:textColor="@color/titleTextColor"
-                    android:textSize="@dimen/size_16sp"
+                    android:textSize="@dimen/size_18sp"
                     android:textStyle="bold" />
 
                 <TextView
@@ -607,14 +586,14 @@
                     android:layout_marginLeft="@dimen/margin_16dp"
                     android:layout_marginStart="@dimen/margin_16dp"
                     android:text="@string/content_q_7"
-                    android:textColor="@color/questionTextColor" />
+                    android:textColor="@color/questionTextColor"
+                    android:textSize="@dimen/size_20sp" />
 
                 <RadioGroup
                     android:id="@+id/radioGroup7"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:orientation="vertical">
-
 
                     <RadioButton
                         android:id="@+id/button_7_1"
@@ -626,7 +605,7 @@
                         android:onClick="onCheckedQuestion7"
                         android:text="@string/option_q_7_1"
                         android:textColor="@color/optionTextColor"
-                        android:textSize="@dimen/size_12sp" />
+                        android:textSize="@dimen/size_16sp" />
 
                     <RadioButton
                         android:id="@+id/button_7_2"
@@ -638,7 +617,7 @@
                         android:onClick="onCheckedQuestion7"
                         android:text="@string/option_q_7_2"
                         android:textColor="@color/optionTextColor"
-                        android:textSize="@dimen/size_12sp" />
+                        android:textSize="@dimen/size_16sp" />
 
                     <RadioButton
                         android:id="@+id/button_7_3"
@@ -650,7 +629,7 @@
                         android:onClick="onCheckedQuestion7"
                         android:text="@string/option_q_7_3"
                         android:textColor="@color/optionTextColor"
-                        android:textSize="@dimen/size_12sp" />
+                        android:textSize="@dimen/size_16sp" />
 
                     <RadioButton
                         android:id="@+id/button_7_4"
@@ -662,12 +641,10 @@
                         android:onClick="onCheckedQuestion7"
                         android:text="@string/option_q_7_4"
                         android:textColor="@color/optionTextColor"
-                        android:textSize="@dimen/size_12sp" />
+                        android:textSize="@dimen/size_16sp" />
                 </RadioGroup>
-
             </LinearLayout>
         </android.support.v7.widget.CardView>
-
 
         <android.support.v7.widget.CardView
             android:layout_width="match_parent"
@@ -685,7 +662,6 @@
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
 
-
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -696,7 +672,7 @@
                     android:text="@string/title_q_8"
                     android:textAllCaps="true"
                     android:textColor="@color/titleTextColor"
-                    android:textSize="@dimen/size_16sp"
+                    android:textSize="@dimen/size_18sp"
                     android:textStyle="bold" />
 
                 <TextView
@@ -706,7 +682,8 @@
                     android:layout_marginLeft="@dimen/margin_16dp"
                     android:layout_marginStart="@dimen/margin_16dp"
                     android:text="@string/content_q_8"
-                    android:textColor="@color/questionTextColor" />
+                    android:textColor="@color/questionTextColor"
+                    android:textSize="@dimen/size_20sp" />
 
                 <LinearLayout
                     android:id="@+id/layout_8"
@@ -724,7 +701,7 @@
                         android:onClick="onCheckedQuestion8"
                         android:text="@string/option_q_8_1"
                         android:textColor="@color/optionTextColor"
-                        android:textSize="@dimen/size_12sp" />
+                        android:textSize="@dimen/size_16sp" />
 
                     <CheckBox
                         android:id="@+id/button_8_2"
@@ -736,7 +713,7 @@
                         android:onClick="onCheckedQuestion8"
                         android:text="@string/option_q_8_2"
                         android:textColor="@color/optionTextColor"
-                        android:textSize="@dimen/size_12sp" />
+                        android:textSize="@dimen/size_16sp" />
 
                     <CheckBox
                         android:id="@+id/button_8_3"
@@ -748,20 +725,18 @@
                         android:onClick="onCheckedQuestion8"
                         android:text="@string/option_q_8_3"
                         android:textColor="@color/optionTextColor"
-                        android:textSize="@dimen/size_12sp" />
+                        android:textSize="@dimen/size_16sp" />
 
                     <CheckBox
                         android:id="@+id/button_8_4"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-
                         android:layout_marginLeft="@dimen/margin_16dp"
                         android:layout_marginStart="@dimen/margin_16dp"
                         android:onClick="onCheckedQuestion8"
                         android:text="@string/option_q_8_4"
                         android:textColor="@color/optionTextColor"
-                        android:textSize="@dimen/size_12sp" />
-
+                        android:textSize="@dimen/size_16sp" />
                 </LinearLayout>
 
                 <TextView
@@ -776,7 +751,6 @@
                     android:textColor="@color/note" />
             </LinearLayout>
         </android.support.v7.widget.CardView>
-
 
         <android.support.v7.widget.CardView
             android:layout_width="match_parent"
@@ -795,7 +769,6 @@
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
 
-
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -806,7 +779,7 @@
                     android:text="@string/title_q_9"
                     android:textAllCaps="true"
                     android:textColor="@color/titleTextColor"
-                    android:textSize="@dimen/size_16sp"
+                    android:textSize="@dimen/size_18sp"
                     android:textStyle="bold" />
 
                 <TextView
@@ -816,7 +789,8 @@
                     android:layout_marginLeft="@dimen/margin_16dp"
                     android:layout_marginStart="@dimen/margin_16dp"
                     android:text="@string/content_q_9"
-                    android:textColor="@color/questionTextColor" />
+                    android:textColor="@color/questionTextColor"
+                    android:textSize="@dimen/size_20sp" />
 
                 <RadioGroup
                     android:id="@+id/radioGroup9"
@@ -834,7 +808,7 @@
                         android:onClick="onCheckedQuestion9"
                         android:text="@string/option_q_9_1"
                         android:textColor="@color/optionTextColor"
-                        android:textSize="@dimen/size_12sp" />
+                        android:textSize="@dimen/size_16sp" />
 
                     <RadioButton
                         android:id="@+id/button_9_2"
@@ -846,7 +820,7 @@
                         android:onClick="onCheckedQuestion9"
                         android:text="@string/option_q_9_2"
                         android:textColor="@color/optionTextColor"
-                        android:textSize="@dimen/size_12sp" />
+                        android:textSize="@dimen/size_16sp" />
 
                     <RadioButton
                         android:id="@+id/button_9_3"
@@ -858,7 +832,7 @@
                         android:onClick="onCheckedQuestion9"
                         android:text="@string/option_q_9_3"
                         android:textColor="@color/optionTextColor"
-                        android:textSize="@dimen/size_12sp" />
+                        android:textSize="@dimen/size_16sp" />
 
                     <RadioButton
                         android:id="@+id/button_9_4"
@@ -870,13 +844,11 @@
                         android:onClick="onCheckedQuestion9"
                         android:text="@string/option_q_9_4"
                         android:textColor="@color/optionTextColor"
-                        android:textSize="@dimen/size_12sp"
+                        android:textSize="@dimen/size_16sp"
                         tools:ignore="TooManyViews" />
-
                 </RadioGroup>
             </LinearLayout>
         </android.support.v7.widget.CardView>
-
 
         <android.support.v7.widget.CardView
             android:layout_width="match_parent"
@@ -895,7 +867,6 @@
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
 
-
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -906,7 +877,7 @@
                     android:text="@string/title_q_10"
                     android:textAllCaps="true"
                     android:textColor="@color/titleTextColor"
-                    android:textSize="@dimen/size_16sp"
+                    android:textSize="@dimen/size_18sp"
                     android:textStyle="bold" />
 
                 <TextView
@@ -916,8 +887,8 @@
                     android:layout_marginLeft="@dimen/margin_16dp"
                     android:layout_marginStart="@dimen/margin_16dp"
                     android:text="@string/content_q_10"
-                    android:textColor="@color/questionTextColor" />
-
+                    android:textColor="@color/questionTextColor"
+                    android:textSize="@dimen/size_20sp" />
 
                 <RadioGroup
                     android:id="@+id/radioGroup10"
@@ -935,7 +906,7 @@
                         android:onClick="onCheckedQuestion10"
                         android:text="@string/option_q_10_1"
                         android:textColor="@color/optionTextColor"
-                        android:textSize="@dimen/size_12sp" />
+                        android:textSize="@dimen/size_16sp" />
 
                     <RadioButton
                         android:id="@+id/button_10_2"
@@ -947,7 +918,7 @@
                         android:onClick="onCheckedQuestion10"
                         android:text="@string/option_q_10_2"
                         android:textColor="@color/optionTextColor"
-                        android:textSize="@dimen/size_12sp" />
+                        android:textSize="@dimen/size_16sp" />
 
                     <RadioButton
                         android:id="@+id/button_10_3"
@@ -959,7 +930,7 @@
                         android:onClick="onCheckedQuestion10"
                         android:text="@string/option_q_10_3"
                         android:textColor="@color/optionTextColor"
-                        android:textSize="@dimen/size_12sp" />
+                        android:textSize="@dimen/size_16sp" />
 
                     <RadioButton
                         android:id="@+id/button_10_4"
@@ -971,10 +942,8 @@
                         android:onClick="onCheckedQuestion10"
                         android:text="@string/option_q_10_4"
                         android:textColor="@color/optionTextColor"
-                        android:textSize="@dimen/size_12sp" />
+                        android:textSize="@dimen/size_16sp" />
                 </RadioGroup>
-
-
             </LinearLayout>
         </android.support.v7.widget.CardView>
 
@@ -1004,6 +973,5 @@
                 android:text="@string/reset"
                 android:textColor="@color/buttonTextColor" />
         </RelativeLayout>
-
     </LinearLayout>
 </ScrollView>

@@ -11,7 +11,6 @@
     <color name="buttonTextColor">#1D2540</color>
     <color name="welcomeTextColor">#F0F2F2</color>
     <color name="titleTextColor">#F0F2F2</color>
-
     <color name="button_pressed">#ff8a00</color>
     <color name="button_focused">#ff8a00</color>
     <color name="button_default">#1c76bb</color>
