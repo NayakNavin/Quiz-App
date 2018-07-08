@@ -408,11 +408,15 @@ public class MainActivity extends AppCompatActivity {
         answer5 = option5.getText().toString();
         if (checked1 && checked2 && checked3 && checked4 && checked6 && checked7 && checked8 && checked9 && checked10 && !answer5.equals("")) {
             // question 4
-            // Checks the checkBoxes and assign 10 points if it is correct or 5 points if partially correct
-            if (option_4_2.isChecked() && option_4_3.isChecked()) {
+            // Checks the checkBoxes and assign 10 points if user selects both correct checkBoxes
+            if (option_4_2.isChecked() && option_4_3.isChecked() && !option_4_1.isChecked() && !option_4_4.isChecked()) {
                 score4 = 10;
+                //  5 points if user selects either 1 correct checkBox
             } else if (option_4_2.isChecked() || option_4_3.isChecked()) {
                 score4 = 5;
+                // 0 points if user select both wrong checkBoxes
+            } else if (option_4_1.isChecked() && option_4_4.isChecked()) {
+                score4 = 0;
             }
             // question 5
             // Checks the text and assign 10 points if it is correct
@@ -422,18 +426,26 @@ public class MainActivity extends AppCompatActivity {
                 score5 = 0;
 
             // question 6
-            // Checks the checkBoxes and assign 10 points if it is correct or 5 points if partially correct
-            if (option_6_3.isChecked() && option_6_4.isChecked()) {
+            // Checks the checkBoxes and assign 10 points if user selects both correct checkBoxes
+            if (option_6_3.isChecked() && option_6_4.isChecked() && !option_6_2.isChecked() && !option_6_1.isChecked()) {
                 score6 = 10;
+                //  5 points if user selects either 1 correct checkBox
             } else if (option_6_3.isChecked() || option_6_4.isChecked()) {
                 score6 = 5;
+                // 0 points if user select both wrong checkBoxes
+            } else if (option_6_2.isChecked() && option_6_1.isChecked()) {
+                score6 = 0;
             }
             // question 8
-            // Checks the checkBoxes and assign 10 points if it is correct or 5 points if partially correct
-            if (option_8_1.isChecked() && option_8_2.isChecked()) {
+            // Checks the checkBoxes and assign 10 points if user selects both correct checkBoxes
+            if (option_8_1.isChecked() && option_8_2.isChecked() && !option_8_3.isChecked() && !option_8_4.isChecked()) {
                 score8 = 10;
+                //  5 points if user selects either 1 correct checkBox
             } else if (option_8_1.isChecked() || option_8_2.isChecked()) {
                 score8 = 5;
+                // 0 points if user select both wrong checkBoxes
+            } else if (option_8_3.isChecked() && option_8_4.isChecked()) {
+                score8 = 0;
             }
 
             // calculate scores and display the total score.
